@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Mi carrito de compras</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody id="carrito">
+      <tr id="producto1">
+        <td>Tomte</td>
+        <td>10.00</td>
+        <td><input type="number" value="0" onchange="actualizarCarrito()"></td>
+        <td id="subtotal1">0.00</td>
+      </tr>
+      <tr id="producto2">
+        <td>Banana</td>
+        <td>20.00</td>
+        <td><input type="number" value="0" onchange="actualizarCarrito()"></td>
+        <td id="subtotal2">0.00</td>
+      </tr>
+      <tr id="producto3">
+        <td>Melon</td>
+        <td>30.00</td>
+        <td><input type="number" value="0" onchange="actualizarCarrito()"></td>
+        <td id="subtotal3">0.00</td>
+      </tr>
+      <tr id="producto4">
+        <td>Lechuga</td>
+        <td>40.00</td>
+        <td><input type="number" value="0" onchange="actualizarCarrito()"></td>
+        <td id="subtotal4">0.00</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total:</td>
+        <td id="total">0.00</td>
+      </tr>
+      <tr>
+        <td colspan="3">Cuotas:</td>
+        <td>
+          <select id="cuotas" onchange="calcularCuotas()">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="6">6</option>
+            <option value="12">12</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3"></td>
+        <td><button onclick="pagar()">Pagar</button></td>
+      </tr>
+    </tfoot>
+  </table>
+
+
+  <script src="./Javascript/js.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
